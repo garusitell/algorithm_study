@@ -1,0 +1,11 @@
+# .github/gemini-settings.yml
+
+language: "ko"
+
+# [가상] 커스텀 프롬프트 기능이 추가된다면 이런 모습일 수 있습니다.
+custom_prompts:
+  - on: pull_request
+    prompt: |
+      이 Pull Request는 알고리즘 문제 풀이입니다.
+      제출된 코드와 PR 본문을 분석하여, 풀이한 문제와 비슷한 유형의 백준 온라인 저지 문제 3개를 추천해주세요.
+      추천 시에는 문제 번호, 제목, 그리고 어떤 점에서 유사한지 간략한 이유를 포함하여 목록 형식으로 작성해주세요
