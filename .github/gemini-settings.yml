@@ -1,6 +1,6 @@
 # .github/gemini-settings.yml
 
-language: "korean"
+language: ko
 
 # [가상] 커스텀 프롬프트 기능이 추가된다면 이런 모습일 수 있습니다.
 custom_prompts:
