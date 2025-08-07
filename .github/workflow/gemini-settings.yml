@@ -1,0 +1,22 @@
+name: Gemini AI Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Gemini AI Reviewer
+        uses: google-gemini/gemini-cli-github-action@main
+        with:
+          # gemini-settings.yml에 작성하셨던 내용을 여기에 직접 입력합니다.
+          prompt: |
+            이 Pull Request는 알고리즘 문제 풀이입니다.
+            제출된 코드와 PR 본문을 분석하여, 풀이한 문제와 비슷한 유형의 백준 온라인 저지 문제 3개를 추천해주세요.
+            추천 시에는 문제 번호, 제목, 그리고 어떤 점에서 유사한지 간략한 이유를 포함하여 목록 형식으로 작성해주세요.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
