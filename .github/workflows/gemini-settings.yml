@@ -14,7 +14,6 @@ jobs:
       - name: Gemini AI Reviewer
         uses: google-gemini/gemini-cli-github-action@main
         with:
-          # gemini-settings.yml에 작성하셨던 내용을 여기에 직접 입력합니다.
           prompt: |
             이 Pull Request는 알고리즘 문제 풀이입니다.
             제출된 코드와 PR 본문을 분석하여, 풀이한 문제와 비슷한 유형의 백준 온라인 저지 문제 3개를 추천해주세요.
