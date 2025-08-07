@@ -1,0 +1,8 @@
+language: "ko"
+
+# 자동 리뷰에 사용할 프롬프트를 직접 지정
+prompts:
+  pr_summary: |
+    이 Pull Request의 변경 사항을 제목과 함께 한글로 명확하게 요약해줘.
+  review_comment: |
+    이 코드의 변경점을 리뷰하고 개선점이나 잠재적인 버그가 있다면 한글로 제안해줘.
