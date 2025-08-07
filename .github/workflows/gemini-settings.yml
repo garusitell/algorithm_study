@@ -31,4 +31,4 @@ jobs:
             추천 시에는 문제 번호, 제목, 그리고 어떤 점에서 유사한지 간략한 이유를 포함하여 목록 형식으로 작성해주세요.
 
           # Pull Request에 댓글을 작성하기 위한 GitHub 토큰입니다.
-          github_token: ${{ secrets.GITHUB_TOKEN }}thub_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
